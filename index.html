@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+            background-color: #f0f0f0;
+        }
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Playing Blue Playlist</div>
+    <audio id="audio" autoplay>
+        <source src="https://www.youtube.com/watch?v=-m7iS1TvphE&t=1241s" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById('audio').play();
+    </script>
+</body>
+</html>
